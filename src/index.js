@@ -1,41 +1,64 @@
 /*
 1)
-Declare a function called theCoders that takes a driver and a navigator as arguments and prints out "The awesome coders for today is the driver Jennie and the navigator Alfons" 
+Declare a function called theCoders that takes a driver and a navigator as arguments and prints out 
+"The awesome coders for today is the driver Jennie and the navigator Alfons" 
 Where Jennie represents the first argument passed in and Alfons the second.
 When you've set that up, invoke the function to see if it works.
 */
 
 const theCoders = (driver, navigator) => {
     console.log(
-      `The awesome coders for today is the driver ${driver} and the navigator ${navigator}`
-    );
+      `The awesome coders for today is the driver ${driver} and the navigator ${navigator}`)
+      if (driver.length > navigator.length){
+        console.log ("The driver has the longest name.")
+      } else if (navigator.length > driver.length) {
+        console.log ("The navigator has the longest name.")
+      } else {
+        console.log ("The driver and the navigator has equally long names")
+      }
+
   };
-  theCoders("jennie", "tom");
+theCoders("Jennie", "Alfonsia");
   /*
   2)
   Pass in only ONE name when you call the function and see what happens.
   (HINT, you should get undefined...)
   */
   
+
+
   /*
   3) 
   create a function that checks which name is the longest when comparing the coders 
   and print out: "The driver has the longest name." or "The navigator has the longest name" 
   or if the names ar the same length "The driver and the navigator has equally long names"
   */
+
   
   /*
   4) 
   to get user input you can use the prompt() and then store that into a variable.
   Such as 
   let userAge = prompt('How old are you?')
-  Create a function that prompts the user for its age, then depending on the age will alert back different messages such as 
+  Create a function that prompts the user for its age, then depending on the age will alert 
+  back different messages such as 
   alert('wow you are 33! that's young!')
   or alert('23! Younger than Zlatan') or something like that.
   Add as many conditonals as you want.
   */
-  
-  const calculationTest = () => {
+
+  /*
+  let result = prompt (
+    `What is 5 + 6?`
+  ) 
+    if (result === "11"){
+      alert(`That's correct`)
+    } else{
+      alert(`Nope, try again`)
+    }
+  console.log(result)
+  */
+
     /*
     5)
     In this function we want to give the user a mathematical calculation to 
@@ -43,8 +66,30 @@ const theCoders = (driver, navigator) => {
     If the answer is correct, congratulate the user. 'Yay! Correct'
     If not, give the user the correct answer so they can learn. 'Noooo, the answer is 11'
     You choose if to use addition, subtraction, multiplication or division. 
-    */
-  };
+    
+  */
+ 
+
+  let a = Math.random (11)
+  let b = Math.random (11)
+
+  const mathTask = () => {
+    let answer = (
+      prompt (`What is ${a}*${b}?`)
+      )
+      if (answer = a*b){
+      alert(`That's correct`)
+    } else{
+      alert(`Nope, try again`)
+    }
+  }
+
+  mathTask ()
+
+ /* let result = prompt (
+    `What is 5 + 6?`
+  ) 
+    
   
   /*
   6) **BONUS**
